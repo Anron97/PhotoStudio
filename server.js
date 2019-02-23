@@ -12,8 +12,19 @@ var express = require('express'),
     app.get('/', function (req, res) {
       res.render('index');
     });
+    app.post('/', function (req, res) {
+    });
     app.get('/work/portrait', function (req, res) {
       res.render('portrait')
+    });
+    app.get('/work/portrait/2', function (req, res) {
+      res.render('portrait2')
+    });
+    app.get('/work/portrait/3', function (req, res) {
+      res.render('portrait3')
+    });
+    app.get('/work/portrait/4', function (req, res) {
+      res.render('portrait4')
     });
     app.post('/send-email', function (req, res) {
       let transporter = nodeMailer.createTransport({
