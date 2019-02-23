@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Фотогалерея</title>
+<meta name="description" content="Описание сайта. Будет видно в анонсе поисковых систем. Не более 200 символов" />
+<meta name="keywords" content="ключевые, слова, через, запятую" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<link rel="stylesheet" href="styles/prettyPhoto.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.prettyPhoto.js"></script>
+<script type="text/javascript">
+$(document).ready(function () { $("a[rel^='prettyPhoto']").prettyPhoto({theme:'dark_rounded'}); });
+</script>
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header" class="clear">
+    <div class="fl_left">
+      <h1><a href="index.html">Фотогалерея</a></h1>
+      <p>Название сайта - фотогалереи</p>
+    </div>
+    <div class="fl_right">
+       <form action="#" method="post" id="search">
+        <fieldset>
+          <legend>Поиск по сайту</legend>
+          <input type="text" value="Найти&hellip;" onfocus="this.value=(this.value=='Найти&hellip;')? '' : this.value ;" />
+          <input type="image" id="go" src="images/search.gif" alt="Search" />
+        </fieldset>
+      </form> 
+      <ul id="topnav" class="clear">
+          <li><a href="#">Нужные ссылки</a>
+          <ul>
+            <li><a href="#">Ссылка 1</a></li>
+            <li><a href="#">Ссылка 2</a></li>
+            <li><a href="#">Ссылка 3</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="gallery.html">Галерея</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="full-width.html">Описание</a></li>
+        <li class="last"><a href="index.html">Главная</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Заголовок -->
+<div class="wrapper col2">
+  <div id="shout">
+    <h2>Моя Фотогалерея</h2>
+  </div>
+</div>
+<!-- Средний блок -->
+<div class="wrapper col3">
+  <div id="container" class="clear">
+    <!-- Фото -->
+    <div id="gallery" class="clear">
+      <ul>
+        <li><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 1"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 2"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 3"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li class="last"><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 4"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 5"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 6"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 7"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li class="last"><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 8"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 9"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 10"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 11"><img src="images/demo/215x120.gif" alt="" /></a></li>
+        <li class="last"><a href="images/demo/658x432.gif" rel="prettyPhoto[gallery1]" title="Картинка 12"><img src="images/demo/215x120.gif" alt="" /></a></li>
+      </ul>
+    </div>
+    <!-- Конец Фото -->
+    <div class="pagination">
+      <ul>
+        <li class="prev"><a href="#">« В начало</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li class="splitter">…</li>
+        <li><a href="#">6</a></li>
+        <li class="current">7</li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li class="splitter">…</li>
+        <li><a href="#">14</a></li>
+        <li><a href="#">15</a></li>
+        <li class="next"><a href="#">Далее »</a></li>
+      </ul>
+    </div>
+    <!-- Коней Средний блок -->
+  </div>
+</div>
+<!-- Нижний блок -->
+<div class="wrapper">
+  <div id="footer">
+    <div class="verticaline clear">
+      <div class="box size1">
+        <h2>Подписка по RSS</h2>
+        <p id="rss"><a href="http://sitey.ru/rss.xml" target="_blank"><img src="images/rss.gif" alt="" /></a></p>
+      </div>
+      <div class="box size2">
+        <address>
+        <strong class="title">Адрес</strong><br />
+        Улица, Фонарь<br />
+        Индекс<br />
+        000000
+        </address>
+        <ul>
+          <li><strong class="title">Тел:</strong><br />
+            xxxxx xxxxxxxxxx</li>
+          <li><strong class="title">Факс:</strong><br />
+            xxxxx xxxxxxxxxx</li>
+          <li><strong class="title">Email:</strong><br />
+            <a href="#">contact@mydomain.ru</a></li>
+        </ul>
+      </div>
+      <div class="box size3">
+        <ul>
+          <li><span>Facebook:</span> <a href="#">Ссылки для закладок</a></li>
+          <li><span>Twitter:</span> <a href="#">Ссылки для закладок</a></li>
+          <li><span>В Контакте:</span> <a href="#">Ссылки для закладок</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Подвал страницы -->
+<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright © 2012 - Ваши права на сайт - <a href="http://sitey.ru/" target="_blank">Имя домена</a></p>
+    <p class="fl_right">Ваш сайт <a href="http://sitey.ru/" target="_blank">SiteY.ru</a></p>
+  </div>
+</div>
+                                                                                                                                                                                                                                                                                                                                          <p align="right"><a target="_blank" style="text-decoration: none; color: #666666" href="http://sitey.ru/"><font size="2">&nbsp; Личный сайт</font></a> &nbsp; &nbsp; </p>
+</body>
+</html>

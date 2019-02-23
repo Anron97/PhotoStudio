@@ -12,18 +12,21 @@ var express = require('express'),
     app.get('/', function (req, res) {
       res.render('index');
     });
+    app.get('/work/portrait', function (req, res) {
+      res.render('portrait')
+    });
     app.post('/send-email', function (req, res) {
       let transporter = nodeMailer.createTransport({
           host: 'smtp.gmail.com',
           port: 465,
           secure: true,
           auth: {
-              user: 'xxx@xx.com',
-              pass: 'xxxx'
+              user: 'a1qa.test.app@gmail.com',
+              pass: 'a1qaa1qa'
           }
       });
       let mailOptions = {
-          from: '"Krunal Lathiya" <xx@gmail.com>', // sender address
+          from: '"Gregory Olsen Studio" <reginarbk12@gmail.com>', // sender address
           to: req.body.to, // list of receivers
           subject: req.body.subject, // Subject line
           text: req.body.body, // plain text body

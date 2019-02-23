@@ -1,44 +1,178 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Nodemailer Email Example</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-  </head>
-  <body>
-    <div class="container"><br />
-      <h1>Send The Email</h1><br />
-      <form action="/send-email" method="post">
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-            <label for="to">To:</label>
-            <input type="email" class="form-control" name="to">
-          </div>
-        </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-            <label for="subject">Subject:</label>
-            <input type="text" class="form-control" name="subject">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4"></div>
-            <div class="form-group col-md-4">
-              <label for="body">Body:</label>
-              <textarea cols="5" rows="5"class="form-control" name="body"></textarea>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-            <button type="submit" class="btn btn-success">Send</button>
-          </div>
-        </div>
-      </form>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Gregory Olsen</title>
+<meta name="description" content="Gregory Olsen is a photographer, podcast host, and creative entrepreneur devoted to inspiring the world to create their moments and create their life.">
+<meta name="keywords" content="gregory olsen, photographer, new york city, podcast host, usher, portrait, lifestyle, celebrity">
+<link rel="icon" href="https://358bb28d538e8f7f2888-7458310c472644cf613cb19f403ef708.ssl.cf1.rackcdn.com/NO_Favicon.gif" type="image/x-icon">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.photo_category').showFeatureText();
+    $(".thumbs a").click(function () {
+        var imgpath = $(this).attr("href");
+        var imgalt = $(this).attr("alt");
+        $("#placeholder").attr({
+            src: imgpath,
+            alt: imgalt
+        });
+        return false;
+    });
+});
+$.fn.showFeatureText = function () {
+    return this.each(function () {
+        var box = $(this);
+        var text = $('span', this);
+        text.css({
+            display: 'block',
+            position: 'absolute',
+            top: '0',
+            left: '0'
+        }).hide();
+        box.hover(function () {
+            text.slideDown("fast");
+        }, function () {
+            text.slideUp("fast");
+        });
+    });
+}
+</script>
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header" class="clear">
+    <div class="fl_left">
+      <h1><a href="index_my.html">Gregory Olsen</a></h1>
+      <p>German Photographer</p>
     </div>
-  </body>
+    <div class="fl_right">     
+       <form action="#" method="post" id="search">
+        <fieldset>
+          <legend>legend</legend>
+          <input type="text" value="Search&hellip;" onfocus="this.value=(this.value=='Search&hellip;')? '' : this.value ;" />
+          <input type="image" id="go" src="images/search.gif" alt="Search" />
+        </fieldset>
+      </form>     
+      <ul id="topnav" class="clear">
+	  <li><a href="https://www.instagram.com/ph_olsen">InstaOlsen</a></li>
+	  <li><a href="#">Connect</a>
+          <ul>
+            <li><a href="biopress.html">Bio & Press</a></li>
+            <li><a href="clients.html">Clients</a></li>
+	    <li><a href="philanthropy.html">Philanthropy</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+          </ul>
+          </li>
+	  <li><a href="sessions.html">Sessions</a></li>
+          <li><a href="#">Work</a>
+          <ul>
+            <li><a href="/work/portrait">Portrait</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="travel.html">Travel</a></li>
+	    <li><a href="#">Motion</a></li>
+          </ul>
+          </li>
+        <li class="active last"><a href="index_my.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="wrapper col2">
+  <div id="homepage" class="clear">
+    <p><img id="placeholder" src="images/Home/home.jpg" alt="" /></p>
+    <div class="fl_right">
+      <h2>Demo</h2>
+      <ul class="thumbs">
+        <li><a href="images/Home/14.jpg" href="portrait.html"><img src="images/Home/14m.jpg" alt="" /></a></li>
+        <li><a href="images/Home/60.jpg" href="lifestyle.html"><img src="images/Home/60m.jpg" alt="" /></a></li>
+        <li><a href="images/Home/38.jpg" href="travel.html"><img src="images/Home/38m.jpg" alt="" /></a></li>
+        <li class="last"><a href="images/Home/10.jpg"><img src="images/Home/10m.jpg" alt="" /></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper col3">
+  <div id="container" class="clear">
+    <div id="hpage_info" class="clear">
+      <div class="fl_left">
+        <h2 class="title" >WHAT'S THE STORY?</h2>
+        <p align="justify">Every business or brand  has a story to tell. That's where we come in. We will help tell your story in the best way possible through a combination of imagery. Ok enough about us.</p>
+      </div>
+      <div class="fl_right">
+            <div class="imgl"><img src="images/Home/how3.jpg" alt="" /></div>
+      </div>
+    </div>
+<hr>
+    <div id="hpage_info" class="clear">
+      <div class="fl_left">
+        <h2 class="title">HOW DOES IT WORK?</h2>
+        <p align="justify">Get in touch via email, let us know what you're working on, no need for lots of detail at this point just a few words, we want to know why you're excited about your product or service.</p>
+      </div>
+      <div class="fl_right">
+        <div class="imgl"><img src="images/Home/how.jpg" alt="" /></div>
+      </div>
+    </div>
+<hr>
+    <div id="hpage_info" class="clear">
+      <div class="fl_left">
+        <h2 class="title">SO WHAT'S NEXT ?</h2>
+        <p align="justify">We then help you by creating strong visual content. Our solid production skill sets give us the confidence to experiment, this might mean trying new things we dream up together.</p>
+      </div>
+      <div class="fl_right">
+        <div class="imgl"><img src="images/Home/how2.jpg" alt="" /></div>
+      </div>
+    </div>
+<hr>
+    <div id="hpage_info" class="clear">
+      <div class="fl_left">
+        <h2 class="title">LAST WORDS</h2>
+        <p align="justify">We will delight you with every step of the journey,  this business and what we create for you is our passion, this is more then just a job for us. We've worked with the largest brands in the world to very small businesses, everyone is treated equally. Our mojo is simple: We're friendly, professional and honest, happy to work directly or through your chosen agency.</p>
+      </div>
+      <div class="fl_right">
+        <div class="imgl"><img src="images/Home/how4.jpg" alt="" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div id="footer">
+    <div class="verticaline clear">
+      <div class="box size1">
+        <div class="imgl"><img src="images/Home/foo.jpg" alt="" /></div>
+	<p align="center">CONTACT US, THERE'S NO TIME LIKE THE PRESENT</p>
+      </div>
+      <h2 align="center">If you would like to talk to us about any upcoming projects please get in touch using the details below:</h2><br>
+      <div class="box size2">
+        <address>
+        <strong class="title">Address</strong><br />
+        Gregory Olsen Studio<br />
+        Unit 124 - 4293 Mounttain Square<br />
+        Whistler, British Columbia, Canada<br />
+	VoN 1B4
+        </address>
+        <ul>
+          <li><strong class="title">Call us on</strong><br />
+            +44 0207 435 2086</li>
+          <li><strong class="title">Email:</strong><br />
+            <a>info@gregoryolsen.com</a></li>
+        </ul>
+      </div>
+      <div class="box size3">
+        <ul>
+          <li><span>Facebook:</span> <a href="https://www.facebook.com/ph_olsen" target="_blank">www.facebook.com/ph_olsen</a></li>
+          <li><span>Twitter:</span> <a href="https://www.twitter.com/ph_olsen" target="_blank">www.twitter.com/ph_olsen</a></li>
+	  <li><span>Instagram:</span> <a href="https://www.instagram.com/ph_olsen" target="_blank">www.instagram.com/ph_olsen</a></li>
+          <li><span>Youtube:</span> <a href="https://www.youtube.com/ph_olsen" target="_blank">www.youtube.com/ph_olsen</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+                                                                                                                                                                                                                                                                                                                                       
+</body>
 </html>
