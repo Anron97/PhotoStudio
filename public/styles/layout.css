@@ -93,8 +93,8 @@ div.asset{
 .col3{color:#9FA4AA; background-color:#000000; border-bottom:5px solid #444444;}
 .col3 a{color:#FF412C; background-color:#000000;}
 
-#header, #homepage, #shout, #container, #footer, #copyright{
-	position:relative;
+#header, #homepage, #shout, #container, #footer{
+	position: relative;
 	margin:0 auto 0;
 	display:block;
 	width:960px;
@@ -387,21 +387,4 @@ div.asset{
 
 #footer .last{
 	margin:0;
-	}
-
-/* ------------Подвал-----------*/
-
-#copyright{
-	padding:15px 0;
-	border-top:1px solid #333333;
-	}
-
-#copyright p{
-	margin:0;
-	padding:0;
-	}
-
-#copyright, #copyright a{
-	color:#6B6B6B;
-	background-color:#1C1C1C;
 	}

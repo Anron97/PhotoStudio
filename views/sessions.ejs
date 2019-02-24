@@ -3,13 +3,17 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-<title>Bio & Press | Gregory Olsen</title>
+<title>Sessions | Gregory Olsen</title>
 <meta name="description" content="Gregory Olsen is a photographer, podcast host, and creative entrepreneur devoted to inspiring the world to create their moments and create their life.">
 <meta name="keywords" content="gregory olsen, photographer, new york city, podcast host, usher, portrait, lifestyle, celebrity">
 <link rel="icon" href="https://358bb28d538e8f7f2888-7458310c472644cf613cb19f403ef708.ssl.cf1.rackcdn.com/NO_Favicon.gif" type="image/x-icon">
-<link rel="stylesheet" href="styles/layout.css" type="text/css" />
-<link rel="stylesheet" href="styles/prettyPhoto.css" type="text/css" />
-<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<link rel="stylesheet" href="../styles/layout.css" type="text/css" />
+<link rel="stylesheet" href="../styles/prettyPhoto.css" type="text/css" />
+<script type="text/javascript" src="../scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.prettyPhoto.js"></script>
+<script type="text/javascript">
+$(document).ready(function () { $("a[rel^='prettyPhoto']").prettyPhoto({theme:'dark_rounded'}); });
+</script>
 <script type="text/javascript">
 $(document).ready(function () {
     $('.photo_category').showFeatureText();
@@ -47,7 +51,7 @@ $.fn.showFeatureText = function () {
 <div class="wrapper col1">
   <div id="header" class="clear">
     <div class="fl_left">
-      <h1><a href="index_my.html">Gregory Olsen</a></h1>
+      <h1><a href="/">Gregory Olsen</a></h1>
       <p>German Photographer</p>
     </div>
     <div class="fl_right">     
@@ -55,42 +59,75 @@ $.fn.showFeatureText = function () {
         <fieldset>
           <legend>legend</legend>
           <input type="text" value="Search&hellip;" onfocus="this.value=(this.value=='Search&hellip;')? '' : this.value ;" />
-          <input type="image" id="go" src="images/search.gif" alt="Search" />
+          <input type="image" id="go" src="../images/search.gif" alt="Search" />
         </fieldset>
       </form>     
       <ul id="topnav" class="clear">
-	  <li><a href="https://www.instagram.com/ph_olsen">InstaOlsen</a></li>
-	  <li><a href="#">Connect</a>
+    <li><a href="https://www.instagram.com/ph_olsen">InstaOlsen</a></li>
+    <li><a href="#">Connect</a>
           <ul>
-            <li><a href="biopress.html">Bio & Press</a></li>
-            <li><a href="clients.html">Clients</a></li>
-	    <li><a href="philanthropy.html">Philanthropy</a></li>
-	    <li><a href="contact.html">Contact</a></li>
-          </ul>
-	  </li>
-	  <li><a href="sessions.html">Sessions</a></li>
-          <li><a href="#">Work</a>
-          <ul>
-            <li><a href="portrait.html">Portrait</a></li>
-            <li><a href="lifestyle.html">Lifestyle</a></li>
-            <li><a href="travel.html">Travel</a></li>
-	    <li><a href="#">Motion</a></li>
+            <li><a href="/connect/biopress">Bio & Press</a></li>
+            <li><a href="/connect/clients">Clients</a></li>
+      <li><a href="/connect/philanthropy">Philanthropy</a></li>
+      <li><a href="/connect/contact">Contact</a></li>
           </ul>
           </li>
-        <li class="active last"><a href="index_my.html">Home</a></li>
+    <li><a href="/sessions">Sessions</a></li>
+          <li><a href="#">Work</a>
+          <ul>
+            <li><a href="/work/portrait">Portrait</a></li>
+            <li><a href="/work/lifestyle">Lifestyle</a></li>
+            <li><a href="/work/travel">Travel</a></li>
+      <li><a href="#">Motion</a></li>
+          </ul>
+          </li>
+        <li class="active last"><a href="/">Home</a></li>
       </ul>
     </div>
   </div>
 </div>
-
+   
 <div class="wrapper col2">
   <div id="shout">
-    <h2>Bio & Press</h2>
+    <h2>Our Sessions</h2>
   </div>
 </div>
 
 <div class="wrapper col3">
   <div id="container" class="clear">
+    <div id="portfolio">
+      <ul>
+        <li class="clear">
+          <div class="fl_left"><div class="imgl"><img src="../images/Sessions/s4m.jpg" alt="" /></div></div>
+          <div class="fl_right">
+            <h2>Mini Studio Session</h2>
+            <p>From $250</p>
+            <p align="justify">Fee includes a 1-hour in-studio session, online watermarked gallery and design appointment.</p>
+            <p class="readmore"><a href="/sessions/book">Book now ></a></p>
+          </div>
+        </li>
+        <li class="clear">
+          <div class="fl_left"><div class="imgl"><img src="../images/Sessions/s5m.jpg" alt="" /></div></div>
+          <div class="fl_right">
+            <h2>Mini Outdoor Session</h2>
+            <p>From $350</p>
+            <p align="justify">Fee includes a 1-hour outdoor session, online watermarked gallery and design appointment.<br />
+            We preselect various locations around the city and will confirm the meeting spot once you are scheduled.</p>
+            <p class="readmore"><a href="/sessions/book/2">Book now ></a></p>
+          </div>
+        </li>
+        <li class="clear">
+          <div class="fl_left"><div class="imgl"><img src="../images/Sessions/s6m.jpg" alt="" /></div></div>
+          <div class="fl_right">
+            <h2>Standard Session</h2>
+            <p>From $650</p>
+            <p align="justify">A 3-hour creative session to execute your headshot needs.<br />
+	    Everyone can use that ONE shot - but getting more than one is way more fun. You won't even know what to choose for your Linkden, FB, profile, business card, website, etc. The uses are endless.</p>
+            <p class="readmore"><a href="/sessions/book/3">Book now ></a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -98,7 +135,7 @@ $.fn.showFeatureText = function () {
   <div id="footer">
     <div class="verticaline clear">
       <div class="box size1">
-        <div class="imgl"><img src="images/Home/foo.jpg" alt="" /></div>
+        <div class="imgl"><img src="../images/Home/foo.jpg" alt="" /></div>
 	<p align="center">CONTACT US, THERE'S NO TIME LIKE THE PRESENT</p>
       </div>
       <h2 align="center">If you would like to talk to us about any upcoming projects please get in touch using the details below:</h2><br>
@@ -128,6 +165,6 @@ $.fn.showFeatureText = function () {
     </div>
   </div>
 </div>
-
+                                                                                                                                                                                                                                                                                                                                 
 </body>
 </html>
